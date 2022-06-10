@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 class AddressBook extends React.Component {
     render() {
         return (
             <div>
                 <h2>Address Book</h2>
-                <button onClick={() => {this.props.onClear();}}>CLEAR ALL</button>
+                <button onClick={() => {this.props.onClear();}}>DELETE ALL</button>
 				<br/><br/>
-				GARBAGE
-				<ul>{this.props.items.map(x => <li key={x}>{x.join(" ... PHONE: ")}</li>)}</ul>
+				<ul>{this.props.items.map(x => <li key={x}>NAME:&nbsp; {x[0]} {<br/>} PHONE: {x[1]}</li>)}</ul>
             </div>
         );
     }

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 class ContactForm extends React.Component {		
     render() {		
@@ -16,11 +16,11 @@ class ContactForm extends React.Component {
 				<br/><br/><br/>
 				<button onClick={ () => {this.props.onAdd([this.inputFieldOne.value.trim(),
 				                                           this.inputFieldTwo.value.trim()]);
-										 this.inputFieldOne.value=""; this.inputFieldTwo.value="";}
+				                         this.inputFieldOne.value=""; this.inputFieldTwo.value="";}
 							    }>ADD CONTACT</button>
 				<br/><br/>
 				<button onClick={ () => {this.inputFieldOne.value=""; this.inputFieldTwo.value="";}
-				                }>CLEAR</button>
+				                }>CLEAR FIELDS</button>
             </div>
         );
     }
