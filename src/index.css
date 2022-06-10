@@ -12,3 +12,60 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #CCC;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #333;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 3em;
+	width: 100vw;
+	background-color: rgb(125,125,125);
+	color: rgb(255,255,255);
+	font-weight: bold;
+}
+
+input[type=text], input[type=tel] {
+	width: 350px;
+}
+
+button {
+	width: 10em;
+	height: 3em;
+	font-size: 0.9em;
+	font-weight: bold;
+	border-radius: 10px;
+	background-color: rgb(200,0,0);
+	color: rgb(255,255,255);
+}
+
+ul {
+	display: table;
+	margin: -1em auto 2em auto;
+	text-align: left;
+	padding: 0;
+}
+nav li {
+	list-style-type: none;
+	padding: 0;
+	margin-top: 0.5em;
+}
+main li {
+	list-style-type: decimal;
+	padding-left: 0.5em;
+	margin-top: 1em;
+}
